@@ -1,7 +1,7 @@
 package com.example.saksham.SpringWalkthrough.sortAlgorithm;
 
-public class QuickSort {
-    public int[] quickSort(int[] numbers) {
+public class QuickSort implements SortInterface {
+    public int[] sortNumbers(int[] numbers) {
         return  numbers;
     }
 }
