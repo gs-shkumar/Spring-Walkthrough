@@ -11,9 +11,13 @@ public class SpringWalkthroughApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = SpringApplication.run(SpringWalkthroughApplication.class, args);
+		ScopeUnderstanding scopeUnderstanding = applicationContext.getBean(ScopeUnderstanding.class);
+		scopeUnderstanding.scopeTest();
+
 		BinarySearchImpl binarySearchImpl = applicationContext.getBean(BinarySearchImpl.class);
+		System.out.println("SpringWalkthroughApplication " + binarySearchImpl);
 		int result = binarySearchImpl.binarySearch(new int[] {}, 3);
-		System.out.println(result);
+//		System.out.println(result);
 	}
 
 }
